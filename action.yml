@@ -1,0 +1,19 @@
+name: "Hazzy SEO Analyzer"
+description: "SEO Analyzer: on-page checks, meta, headings, performance hints, broken link check."
+author: "hazzy"
+branding:
+  icon: "search"
+  color: "blue"
+
+inputs:
+  url:
+    description: "Page URL (e.g. https://example.com/page)"
+    required: true
+
+runs:
+  using: "node20"
+  main: "index.js"
+
+outputs:
+  report:
+    description: "JSON string with SEO analysis"
